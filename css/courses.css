@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+   --main-color:#4D2C5E;
+   --light-color:#888;
+   --light-bg:rgba(77, 44, 94, 0.1);
+   --black:#2c3e50;
+   --white:#fff;
+   --border:.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+
+html{
+   font-size: 79%;
+   width: auto;
+}
+
+html::-webkit-scrollbar{
+   width: 1rem;
+   height: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+
+body{
+   background-color: var(--light-bg);
+}
+
+
+section{
+   padding: 4rem 4rem;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.heading{
+   font-size: 4rem;
+   color:var(--main-color);
+   margin-bottom: 2.5rem;
+   border-bottom: var(--border);
+   padding-bottom: 1.5rem;
+   text-transform: capitalize;
+   text-align: center;
+}
+.heading span {
+   color: lightblue;
+}
+
+
+.box-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows:repeat(2,1fr) ;
+   gap: 2rem;
+   justify-content:center;
+   align-items:start;
+   padding-bottom: 6rem;
+}
+
+.courses .slide{ 
+    
+   width: 28rem;
+   background-color:white; 
+   padding: 0rem; 
+   border-radius: 15px; 
+   box-shadow: 10px 10px 5px lightgrey;
+   height: 530px;
+   transition: all .40s ease;
+   
+} 
+.courses .slide:hover{
+   transform: translateY(-15px);
+
+}
+.courses img{
+   width: 100%;
+   height: 320px;
+   object-fit: cover;
+   border-radius: 15px 15px 0px 0px;
+}
+.courses-text{
+   padding: 10px 20px;
+}
+.courses-text h5{
+   color: red;
+   font-size: 20px;
+   font-weight: 700;
+}
+.courses-text h3{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 25px;
+   margin: 10px 0 10px;
+   transition: all .40 ease;
+}
+.courses-text h3 :hover{
+   color: lightblue;
+
+}
+.courses-text h6{
+   color: #696969;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 15px;
+   margin-bottom: -10px;
+}
+.rating{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 10px 20px;
+}
+.star i{
+   color:#9b6ab4;
+   margin-right: 2px;
+   font-size: 15px;
+
+}
+.review p{
+   color: #696969;
+   font-size:15px ;
+   font-weight: 500;
+}
+
